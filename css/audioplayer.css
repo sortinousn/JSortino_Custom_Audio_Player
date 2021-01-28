@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+    display: table;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.audio-player {
+    width: 400px;
+    height: 60px;
+    background: url('../images/audio_container.svg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+/*
+.audio-player {
+    background: white;
+    border: 1px solid #dfdfdf;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    margin: 4rem 0 4rem 0;
+}
+
+*/
+
+.audio-player .album-image {
+    min-height: 100px;
+    width: 110px;
+    background-size: cover;
+}
+
+.audio-player .player-controls {
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+
+.audio-box {
+    margin-left: 29px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.audio-player .player-controls progress {
+    width: 90%;
+}
+
+.audio-player .player-controls progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    height: 5px;
+}
+
+.audio-player .player-controls progress[value]::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+}
+
+.audio-player .player-controls p {
+    font-size: 1.6rem;
+}
+
+.audio-player #play-btn {
+    background: url('../images/audio_action_play.svg') no-repeat center;
+    background-size: contain;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 3rem 0 3rem 2.5rem;
+}
+
+.audio-player #play-btn.pause {
+    background: url('../images/audio_action_pause.svg') no-repeat center;
+}
+
+#audioTitle {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.start-time {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.end-time {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+#seekObj {
+    width: 70%;
+    background: url('../images/audio_slider.svg') no-repeat center;
+    background-size: contain;
+}
